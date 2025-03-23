@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8">
+  <title>Separar la Basura</title>
+  <!-- Estilos CSS para la página -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f9f0;
+      color: #2e7d32;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00c853;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      color: #1b5e20;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #00e676;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #00c853;
+    }
+
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .content img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #a5d6a7;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    /* Estilo para la marca de agua */
+    .marca-de-agua {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado de la página -->
+  <header>
+    <h1>Separación de la Basura</h1>
+    <p>¡Haz tu parte para cuidar el medio ambiente!</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Botones de navegación -->
+    <div class="button-container">
+      <a href="#organica"><button>Orgánica</button></a>
+      <a href="#reciclable"><button>Inorgánica Reciclable</button></a>
+      <a href="#noReciclable"><button>Inorgánica No Reciclable</button></a>
+      <a href="#peligrosos"><button>Residuos Peligrosos</button></a>
+    </div>
+
+    <!-- Sección de introducción -->
+    <section class="intro">
+      <h2>¿Por qué es importante separar la basura?</h2>
+      <p>Separar los residuos ayuda a reducir la contaminación, facilita el reciclaje y protege la salud de las personas y del planeta. Además, permite que los materiales puedan ser reutilizados, evitando el desperdicio y reduciendo el uso de recursos naturales.</p>
+
+      <h3>✅ Beneficios:</h3>
+      <ul>
+        <li>Menos contaminación en ríos, mares y suelos.</li>
+        <li>Reducción de gases tóxicos y malos olores.</li>
+        <li>Más materiales reciclados y menos basura acumulada.</li>
+        <li>Mayor conciencia ecológica en la comunidad.</li>
+      </ul>
+
+      <h3>⚠️ Consecuencias de no hacerlo:</h3>
+      <ul>
+        <li>Contaminación del agua, aire y tierra.</li>
+        <li>Enfermedades por mala disposición de residuos.</li>
+        <li>Saturación de basureros y rellenos sanitarios.</li>
+        <li>Pérdida de materiales que podrían reciclarse.</li>
+      </ul>
+    </section>
+
+    <!-- Sección de cómo comenzar a separar -->
+    <section>
+      <h2>¿Cómo comenzar a separar en casa?</h2>
+      <p>Separar la basura en casa es fácil si sigues estos pasos:</p>
+      <ul>
+        <li>Coloca al menos 3 botes o bolsas diferentes: uno para orgánico, otro para reciclable y uno para lo no reciclable.</li>
+        <li>Lava los envases reciclables para evitar malos olores.</li>
+        <li>Evita mezclar residuos peligrosos con otros tipos de basura.</li>
+        <li>Infórmate sobre los centros de reciclaje más cercanos a tu comunidad.</li>
+      </ul>
+    </section>
+
+    <!-- Sección de colores de los botes -->
+    <section>
+      <h2>Colores de los botes y su significado</h2>
+      <p>En muchos lugares, los botes tienen colores específicos para facilitar la separación. Aquí te dejamos una guía:</p>
+      <ul>
+        <li>🟢 Verde: Vidrio</li>
+        <li>🔵 Azul: Papel y cartón</li>
+        <li>🟡 Amarillo: Plásticos y metales</li>
+        <li>⚫ Negro: Basura no reciclable</li>
+        <li>🟤 Marrón: Residuos orgánicos</li>
+        <li>🟥 Rojo: Residuos peligrosos</li>
+      </ul>
+    </section>
+
+    <!-- Sección de basura orgánica -->
+    <div id="organica" class="content">
+      <h2>Basura Orgánica</h2>
+      <p>La basura orgánica está compuesta por residuos biodegradables, como restos de comida, frutas, verduras, cáscaras, hojas y otros desechos naturales.</p>
+      <h3>¿Cómo manejarla?</h3>
+      <ul>
+        <li>Separa los residuos orgánicos en un contenedor específico.</li>
+        <li>Evita mezclarla con plásticos o materiales no biodegradables.</li>
+        <li>Puedes compostarla para crear abono natural para tus plantas.</li>
+      </ul>
+      <h3>💡 Datos interesantes:</h3>
+      <ul>
+        <li>El compostaje reduce hasta un 50% la cantidad de basura que llega a los vertederos.</li>
+        <li>Los residuos orgánicos mal gestionados generan gases de efecto invernadero.</li>
+      </ul>
+      <img src="basura-organica.jpg" alt="Basura orgánica">
+    </div>
+
+    <!-- Sección de inorgánica reciclable -->
+    <div id="reciclable" class="content">
+      <h2>Inorgánica Reciclable</h2>
+      <p>Los residuos inorgánicos reciclables incluyen materiales como vidrio, cartón, papel, latas y plásticos limpios.</p>
+      <h3>¿Cómo manejarla?</h3>
+      <ul>
+        <li>Lava los envases antes de reciclarlos para evitar malos olores.</li>
+        <li>Separa por tipo de material (vidrio, plástico, metal, etc.).</li>
+        <li>Lleva los materiales a un centro de reciclaje o utiliza los contenedores adecuados.</li>
+      </ul>
+      <h3>💡 Datos interesantes:</h3>
+      <ul>
+        <li>Reciclar una tonelada de papel salva 17 árboles.</li>
+        <li>El vidrio es 100% reciclable y puede reutilizarse infinitamente.</li>
+      </ul>
+      <img src="basura-reciclable.jpg" alt="Basura reciclable">
+    </div>
+
+    <!-- Sección de inorgánica no reciclable -->
+    <div id="noReciclable" class="content">
+      <h2>Inorgánica No Reciclable</h2>
+      <p>Estos son residuos que no se pueden reutilizar ni reciclar, como pañales, papel higiénico usado, colillas de cigarro y ciertos plásticos.</p>
+      <h3>¿Cómo manejarla?</h3>
+      <ul>
+        <li>Colócalos en un contenedor específico para basura no reciclable.</li>
+        <li>Evita mezclarlos con materiales reciclables.</li>
+        <li>Reduce su uso optando por alternativas reutilizables.</li>
+      </ul>
+      <h3>💡 Datos interesantes:</h3>
+      <ul>
+        <li>Los pañales desechables tardan hasta 500 años en descomponerse.</li>
+        <li>Las colillas de cigarro son uno de los residuos más contaminantes en los océanos.</li>
+      </ul>
+      <img src="inorganica-noreciclable.jpg" alt="Basura no reciclable">
+    </div>
+
+    <!-- Sección de residuos peligrosos -->
+    <div id="peligrosos" class="content">
+      <h2>Residuos Peligrosos</h2>
+      <p>Los residuos peligrosos incluyen medicamentos, pilas, electrónicos, aceites y productos de limpieza. Nunca deben tirarse a la basura común.</p>
+      <h3>¿Cómo manejarla?</h3>
+      <ul>
+        <li>Lleva las pilas y electrónicos a puntos de recolección especializados.</li>
+        <li>Entrega los medicamentos caducados en farmacias con programas de reciclaje.</li>
+        <li>No viertas aceites usados en el desagüe; llévalos a centros de acopio.</li>
+      </ul>
+      <h3>💡 Datos interesantes:</h3>
+      <ul>
+        <li>Una sola pila alcalina puede contaminar hasta 167,000 litros de agua.</li>
+        <li>Los residuos electrónicos contienen metales pesados como plomo y mercurio, altamente tóxicos.</li>
+      </ul>
+      <img src="reciduos-peligrosos.jpg" height="3%" width"100%"/> alt="Residuos peligrosos">
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    ♻️ ¡Separar bien la basura es cuidar nuestro planeta! ♻️
+  </footer>
+
+  <!-- Marca de agua -->
+  <div class="marca-de-agua">hecho por ARΦ4D</div>
+</body>
+</html>
